@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdul Wasay — Gödel &amp; Sprout</title>
+  <meta name="description" content="Abdul Wasay builds Gödel, an AI formal-verification engine for smart contracts, and Sprout, developer-first payments infrastructure. Based in Lahore, Pakistan.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="author" content="Abdul Wasay">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdul Wasay — Gödel &amp; Sprout">
+  <meta property="og:description" content="Founder and systems engineer building formal verification for smart contracts and payments infrastructure.">
+  <meta property="og:url" content="https://whoiswasay.github.io/">
+  <meta property="og:image" content="https://whoiswasay.github.io/assets/portrait.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdul Wasay — Gödel &amp; Sprout">
+  <meta name="twitter:description" content="Founder and systems engineer building formal verification for smart contracts and payments infrastructure.">
+  <meta name="twitter:image" content="https://whoiswasay.github.io/assets/portrait.jpg">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0b0c'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='46' font-weight='700' fill='%23d7ff4f' text-anchor='middle'%3EAW%3C/text%3E%3C/svg%3E">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdul Wasay",
+    "jobTitle": "Founder and systems engineer",
+    "url": "https://whoiswasay.github.io/",
+    "sameAs": [
+      "https://github.com/WhoIsWasay",
+      "https://www.linkedin.com/in/abdul-wasay-a9647b282"
+    ],
+    "knowsAbout": [
+      "Formal verification",
+      "Smart contract security",
+      "AI agents",
+      "Payments infrastructure",
+      "Solidity",
+      "Go"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="Abdul Wasay — home">
+        <span class="brand__mark">AW</span>
+        <span class="brand__text">Abdul Wasay</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#proof">Proof</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="mailto:wasay.godel@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero__copy">
+        <div class="hero__eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Lahore, PK</span>
+          <span class="slash" aria-hidden="true">/</span>
+          <span>Building Gödel</span>
+        </div>
+
+        <h1 class="hero__title">I build systems that can <em>prove</em> they're right.</h1>
+
+        <p class="hero__lede">
+          I'm <strong>Abdul Wasay</strong>, a founder and systems engineer working at the intersection of AI,
+          formal methods, and financial infrastructure. I build <strong>Gödel</strong>, an AI formal-verification
+          engine for smart contracts, and <strong>Sprout</strong>, a developer-first payments platform.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#work">See the work <span aria-hidden="true">↓</span></a>
+          <a class="btn btn--ghost" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero__panel">
+        <div class="console" aria-label="Gödel verification output for MiniVault: four of four bugs proven, zero false positives">
+          <div class="console__bar">
+            <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="console__title">godel / verify</span>
+            <span class="console__badge">proof</span>
+          </div>
+          <div class="console__body">
+            <p class="console__cmd"><span class="prompt" aria-hidden="true">$</span> godel verify contracts/MiniVault.sol</p>
+            <div class="console__row"><span>parse solidity</span><span class="ok">ok</span></div>
+            <div class="console__row"><span>derive invariants</span><span class="ok">4 found</span></div>
+            <div class="console__row"><span>z3 solve</span><span class="ok">sat</span></div>
+            <div class="console__row"><span>foundry replay</span><span class="ok">pass</span></div>
+            <div class="console__result">
+              <span class="check" aria-hidden="true">✓</span>
+              <span><strong>4 / 4</strong> bugs proven</span>
+              <span class="muted">0 false positives</span>
+            </div>
+            <p class="console__note">Every reported finding is replayed against a live Foundry EVM before it ships.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <div>
+          <span class="label">Currently</span>
+          <span>Gödel — formal verification for Solidity</span>
+        </div>
+        <div>
+          <span class="label">Previously</span>
+          <span>Sprout — payments infrastructure in Go</span>
+        </div>
+        <div>
+          <span class="label">Recognition</span>
+          <span>Alibaba Cloud AI Hackathon Pakistan 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Solidity</span><span>Z3</span><span>Foundry</span><span>SMT</span><span>Go</span><span>PostgreSQL</span><span>Redis</span><span>LLM agents</span><span>CI/CD</span><span>EVM</span>
+        <span>Solidity</span><span>Z3</span><span>Foundry</span><span>SMT</span><span>Go</span><span>PostgreSQL</span><span>Redis</span><span>LLM agents</span><span>CI/CD</span><span>EVM</span>
+      </div>
+    </div>
+
+    <section class="section wrap" id="work">
+      <div class="section-head reveal">
+        <p class="section-kicker">01 — Selected work</p>
+        <h2>Two systems. One standard: <em>provable</em>.</h2>
+        <p>I care about the parts that are hard to get right — the ledger, the invariant, the edge case that only appears at 3 a.m. in production.</p>
+      </div>
+
+      <article class="project reveal">
+        <div class="project__aside">
+          <span class="project__num">01</span>
+          <span class="project__tag">AI × formal methods</span>
+        </div>
+        <div class="project__body">
+          <div class="project__head">
+            <div>
+              <h3>Gödel</h3>
+              <p class="project__sub">Formal verification for smart contracts, without the PhD.</p>
+            </div>
+            <a class="arrow-link" href="https://github.com/WhoIsWasay/godel-audit-results" target="_blank" rel="noopener">Audit results <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <p class="project__desc">
+            Gödel reads Solidity, proposes invariants, and proves or disproves them with Z3. A supervisor critiques the
+            candidates, a specifier turns them into formal properties, and a Foundry gatekeeper replays every
+            counterexample on a live EVM. The output is a proof — not a probability score.
+          </p>
+
+          <div class="project__metrics">
+            <div><span class="metric">23/27</span><span class="metric-label">planted bugs caught</span></div>
+            <div><span class="metric">0</span><span class="metric-label">false positives in reported findings</span></div>
+            <div><span class="metric">8</span><span class="metric-label">benchmark contracts</span></div>
+          </div>
+
+          <ul class="pipeline" aria-label="Gödel verification pipeline">
+            <li>Bug Hunter</li>
+            <li>Supervisor</li>
+            <li>Specifier</li>
+            <li>Z3</li>
+            <li>Foundry Gatekeeper</li>
+            <li>Fixer</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__aside">
+          <span class="project__num">02</span>
+          <span class="project__tag">Payments infrastructure</span>
+        </div>
+        <div class="project__body">
+          <div class="project__head">
+            <div>
+              <h3>Sprout</h3>
+              <p class="project__sub">A developer-first payment gateway, built end to end.</p>
+            </div>
+            <a class="arrow-link" href="https://github.com/WhoIsWasay/sprout-go" target="_blank" rel="noopener">Go SDK <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <p class="project__desc">
+            Checkout sessions, tokenized cards, risk scoring, velocity checks, idempotent order creation,
+            HMAC-signed webhooks, and a double-entry ledger — implemented as a Go service on PostgreSQL and Redis,
+            with a merchant dashboard on top.
+          </p>
+
+          <div class="project__metrics">
+            <div><span class="metric">Go</span><span class="metric-label">API + SDK</span></div>
+            <div><span class="metric">Postgres</span><span class="metric-label">ledger + merchant data</span></div>
+            <div><span class="metric">Redis</span><span class="metric-label">idempotency + velocity</span></div>
+          </div>
+
+          <ul class="tags" aria-label="Sprout capabilities">
+            <li>Checkout sessions</li>
+            <li>Card tokenization</li>
+            <li>Risk scoring</li>
+            <li>Idempotency</li>
+            <li>Webhooks</li>
+            <li>KYC</li>
+            <li>Double-entry ledger</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="section wrap" id="proof">
+      <div class="section-head reveal">
+        <p class="section-kicker">02 — Receipts</p>
+        <h2>Proof, not promises.</h2>
+        <p>Benchmarks are how I keep myself honest. These are the numbers from the current Gödel benchmark set — including the bugs it misses.</p>
+      </div>
+
+      <div class="stat-grid reveal">
+        <div class="stat">
+          <span class="stat__value">23<span>/27</span></span>
+          <p>planted bugs caught across 8 benchmark contracts</p>
+        </div>
+        <div class="stat">
+          <span class="stat__value">85.2<span>%</span></span>
+          <p>catch rate on the synthetic benchmark set</p>
+        </div>
+        <div class="stat">
+          <span class="stat__value">0</span>
+          <p>false positives across reported findings</p>
+        </div>
+        <div class="stat">
+          <span class="stat__value">4<span>/4</span></span>
+          <p>MiniVault bugs found and Foundry-confirmed</p>
+        </div>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <caption class="sr-only">Selected Gödel benchmark results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Contract</th>
+              <th scope="col">LOC</th>
+              <th scope="col">Bugs</th>
+              <th scope="col">Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MiniVault</td>
+              <td>72</td>
+              <td>4 / 4</td>
+              <td>All four Foundry-confirmed</td>
+            </tr>
+            <tr>
+              <td>PoolTogether V3 <span class="muted">Code4rena</span></td>
+              <td>433</td>
+              <td>2 / 4 + 2 new</td>
+              <td>Matched 2 known highs; found 2 precision-loss bugs</td>
+            </tr>
+            <tr>
+              <td>DAO Treasury Manager</td>
+              <td>225</td>
+              <td>3 / 3</td>
+              <td>Arithmetic and accounting invariants</td>
+            </tr>
+            <tr>
+              <td>Global Payroll</td>
+              <td>461</td>
+              <td>2 / 4</td>
+              <td>Largest contract; partial catch</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="footnote reveal">
+        “0 false positives” applies to reported findings: a finding only surfaces after Z3 produces a counterexample and
+        Foundry replays it. <a href="https://github.com/WhoIsWasay/godel-audit-results" target="_blank" rel="noopener">Full benchmark data <span aria-hidden="true">↗</span></a>
+      </p>
+    </section>
+
+    <section class="recognition reveal" aria-labelledby="recognition-title">
+      <div class="wrap recognition__inner">
+        <div>
+          <p class="section-kicker">03 — Recognition</p>
+          <h2 id="recognition-title">Alibaba Cloud AI Hackathon <span>Pakistan 2026</span></h2>
+          <p>
+            Advanced through the regional rounds with <strong>Gödel Invariant</strong> and presented at the
+            Regional Technical Evaluation at the University of Central Punjab.
+          </p>
+        </div>
+        <a class="recognition__link" href="https://www.linkedin.com/posts/abdul-wasay-a9647b282_alibabacloud-banoqabil-aihackathonpakistan2026-activity-7516897760831234048-mskO" target="_blank" rel="noopener">
+          <span>Read the announcement</span>
+          <span class="recognition__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section wrap about" id="about">
+      <div class="about__grid">
+        <figure class="portrait reveal">
+          <div class="portrait__frame">
+            <img src="assets/portrait.jpg" alt="Portrait of Abdul Wasay" width="1200" height="1600" loading="lazy" decoding="async">
+          </div>
+          <figcaption>
+            <span>Abdul Wasay</span>
+            <span>Lahore, Pakistan</span>
+          </figcaption>
+        </figure>
+
+        <div class="about__copy reveal">
+          <p class="section-kicker">04 — About</p>
+          <h2>Proof over probability.</h2>
+          <p>
+            I work at the intersection of AI, formal methods, and financial infrastructure. My default question is not
+            “does it run?” but “can I prove it does what it claims?”
+          </p>
+          <p>
+            That question led to Gödel: an attempt to make formal verification fast enough to sit inside a normal
+            engineering workflow. Before that, it led to Sprout: a payments platform where the ledger, the idempotency,
+            and the failure modes have to be right the first time.
+          </p>
+
+          <ul class="principles">
+            <li>
+              <span>01</span>
+              <p><strong>If it can't be verified, it isn't finished.</strong> Tests are evidence. Proofs are stronger.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <p><strong>Boring infrastructure, carefully built.</strong> The best systems are the ones nobody has to think about.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <p><strong>Ship the whole system.</strong> The API, the ledger, the UI, the docs — not just the demo.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact__inner">
+        <div class="reveal">
+          <p class="section-kicker">05 — Contact</p>
+          <h2>Building something that <em>has to be right?</em></h2>
+          <p>
+            I'm open to select pre-mainnet reviews, technical collaborations, and conversations with protocol teams
+            and founders.
+          </p>
+        </div>
+
+        <div class="contact__actions reveal">
+          <a class="btn btn--primary btn--large" href="mailto:wasay.godel@gmail.com">wasay.godel@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact__links">
+            <a href="https://github.com/WhoIsWasay" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/abdul-wasay-a9647b282" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div class="footer-brand">
+        <span class="brand__mark">AW</span>
+        <span>Abdul Wasay</span>
+      </div>
+      <p>Lahore, Pakistan · <span id="year">2026</span></p>
+      <p>Hand-built with HTML, CSS, and a little JS. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
