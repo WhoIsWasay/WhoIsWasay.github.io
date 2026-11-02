@@ -170,7 +170,7 @@
           <div class="project__metrics">
             <div><span class="metric">23/27</span><span class="metric-label">planted bugs caught</span></div>
             <div><span class="metric">0</span><span class="metric-label">false positives in reported findings</span></div>
-            <div><span class="metric">8</span><span class="metric-label">benchmark contracts</span></div>
+            <div><span class="metric">9</span><span class="metric-label">benchmark contracts</span></div>
           </div>
 
           <ul class="pipeline" aria-label="Gödel verification pipeline">
@@ -227,13 +227,13 @@
       <div class="section-head reveal">
         <p class="section-kicker">02 — Receipts</p>
         <h2>Proof, not promises.</h2>
-        <p>Benchmarks are how I keep myself honest. These are the numbers from the current Gödel benchmark set — including the bugs it misses.</p>
+        <p>Benchmarks are how I keep myself honest. Nine contracts tested — eight synthetic benchmarks plus a Code4rena competitive audit — including the bugs it misses.</p>
       </div>
 
       <div class="stat-grid reveal">
         <div class="stat">
           <span class="stat__value">23<span>/27</span></span>
-          <p>planted bugs caught across 8 benchmark contracts</p>
+          <p>planted bugs caught across 8 synthetic benchmarks</p>
         </div>
         <div class="stat">
           <span class="stat__value">85.2<span>%</span></span>
@@ -251,7 +251,7 @@
 
       <div class="table-wrap reveal">
         <table>
-          <caption class="sr-only">Selected Gödel benchmark results</caption>
+          <caption class="sr-only">Gödel benchmark results across nine contracts</caption>
           <thead>
             <tr>
               <th scope="col">Contract</th>
@@ -261,6 +261,48 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>VestingVault</td>
+              <td>159</td>
+              <td>3 / 4</td>
+              <td>Accounting invariant and interpolation bug; 1 missed</td>
+            </tr>
+            <tr>
+              <td>DiscountLiquidityPool</td>
+              <td>131</td>
+              <td>2 / 2</td>
+              <td>Truncation and fee monotonicity</td>
+            </tr>
+            <tr>
+              <td>SubscriptionBillingProration</td>
+              <td>246</td>
+              <td>3 / 3</td>
+              <td>Precision loss, off-by-one, state-machine breach</td>
+            </tr>
+            <tr>
+              <td>DAO Treasury Manager</td>
+              <td>225</td>
+              <td>3 / 3</td>
+              <td>Downcast, ratio denominator, sign violation</td>
+            </tr>
+            <tr>
+              <td>Supply-Chain Escrow</td>
+              <td>388</td>
+              <td>4 / 4</td>
+              <td>Penalty overwrite, boundary, weighted average, desync</td>
+            </tr>
+            <tr>
+              <td>Global Payroll</td>
+              <td>461</td>
+              <td>2 / 4</td>
+              <td>Largest contract; timeline denominator bug, 2 missed</td>
+            </tr>
+            <tr>
+              <td>CollateralizeDebtPosition</td>
+              <td>64</td>
+              <td>2 / 3</td>
+              <td>Fee truncation, interest evasion; 1 missed</td>
+            </tr>
             <tr>
               <td>MiniVault</td>
               <td>72</td>
@@ -272,18 +314,6 @@
               <td>433</td>
               <td>2 / 4 + 2 new</td>
               <td>Matched 2 known highs; found 2 precision-loss bugs</td>
-            </tr>
-            <tr>
-              <td>DAO Treasury Manager</td>
-              <td>225</td>
-              <td>3 / 3</td>
-              <td>Arithmetic and accounting invariants</td>
-            </tr>
-            <tr>
-              <td>Global Payroll</td>
-              <td>461</td>
-              <td>2 / 4</td>
-              <td>Largest contract; partial catch</td>
             </tr>
           </tbody>
         </table>
